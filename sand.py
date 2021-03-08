@@ -69,11 +69,6 @@ def authenticate():
     if(c==0):
         speak("Sorry and good bye")
         exit()
-    
-
-
-
-
 def greetings():
     authenticate()
     speak("Welcome Back Sir!")
