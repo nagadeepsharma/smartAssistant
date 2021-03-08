@@ -148,14 +148,14 @@ if __name__=='__main__':
             webbrowser.get(chrome_path).open('google.com')
         elif 'open youtube' in query:
             webbrowser.get(chrome_path).open('youtube.com')
-        elif 'open c drive' in query:
+        elif 'open c' in query:
             os.startfile('C:')
-        elif 'open d drive' in query:
+        elif 'open d' in query:
             os.startfile('D:')
-        elif 'open e drive' in query:
+        elif 'open e' in query:
             os.startfile('E:')
-        elif 'open f drive' in query:
+        elif 'open f' in query:
             os.startfile('F:')   
         elif 'open mycomputer' in query:
-            os.startfile('This PC')  
+            os.startfile('This PC')
 
