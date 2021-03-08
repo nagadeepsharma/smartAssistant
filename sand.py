@@ -6,7 +6,10 @@ import smtplib
 import pywhatkit as pw
 import os
 
+# voices[0]=male voice
 engine=pyttsx3.init()
+voices=engine.getProperty('voices')
+engine.setProperty('voice',voices[1].id)
 
 def speak(audio):
     engine.say(audio)
@@ -16,7 +19,7 @@ def sendMail(to,content):
     server=smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('nagadeep.chandragiri@gmail.com','')
+    server.login('nagadeep.chandragiri@gmail.com','mylifedad143')
     server.sendmail('nagadeep.chandragiri@gmail.com',to,content)
     server.close()
 
