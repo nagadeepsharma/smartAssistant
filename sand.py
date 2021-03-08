@@ -5,7 +5,8 @@ import wikipedia
 import smtplib
 import pywhatkit as pw
 import os
-
+import webbrowser
+chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
 # voices[0]=male voice
 engine=pyttsx3.init()
 voices=engine.getProperty('voices')
@@ -143,3 +144,18 @@ if __name__=='__main__':
             rem.write(matter)
             speak("Done Sir!")
             rem.close()
+        elif 'open google' in query:
+            webbrowser.get(chrome_path).open('google.com')
+        elif 'open youtube' in query:
+            webbrowser.get(chrome_path).open('youtube.com')
+        elif 'open c drive' in query:
+            os.startfile('C:')
+        elif 'open d drive' in query:
+            os.startfile('D:')
+        elif 'open e drive' in query:
+            os.startfile('E:')
+        elif 'open f drive' in query:
+            os.startfile('F:')   
+        elif 'open mycomputer' in query:
+            os.startfile('This PC')  
+
