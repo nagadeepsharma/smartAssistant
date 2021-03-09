@@ -10,7 +10,7 @@ chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
 # voices[0]=male voice
 engine=pyttsx3.init()
 voices=engine.getProperty('voices')
-engine.setProperty('voice',voices[1].id)
+engine.setProperty('voice',voices[0].id)
 
 def speak(audio):
     engine.say(audio)
@@ -82,7 +82,7 @@ def greetings():
         speak("Good Evening Sir!")
     else:
         speak("Good Night Sir!")
-    speak("This is Agent Sand, How Can i help you?")
+    speak("This is Edith, How Can i help you?")
 
 
 if __name__=='__main__':
